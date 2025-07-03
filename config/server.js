@@ -7,4 +7,13 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  settings: {
+    cors: {
+      enabled: true,
+      origin: [
+        env('NEXT_PUBLIC_FRONTEND_URL', 'http://localhost:3000'),
+        'https://nyson-cms-test.vercel.app',
+      ],
+    },
+  },
 });
