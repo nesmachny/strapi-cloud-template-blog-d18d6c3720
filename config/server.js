@@ -13,6 +13,7 @@ module.exports = ({ env }) => ({
       origin: [
         env('NEXT_PUBLIC_FRONTEND_URL', 'http://localhost:3000'),
         'https://nyson-cms-test.vercel.app',
+        https://v0-nyson-rest-api-connection-v1.vercel.app/,
       ],
     },
   },
